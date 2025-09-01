@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header class="bg-white shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="text-2xl font-bold text-indigo-600">Shop<span class="text-gray-600">Mix</span></div>
+      <nav class="hidden md:flex gap-3 text-sm text-gray-600">
+        <a class="hover:text-indigo-600" href="#">Начало</a>
+        <a class="hover:text-indigo-600" href="#products">Продукти</a>
+        <a class="hover:text-indigo-600" href="#blog">Блог</a>
+        <a class="hover:text-indigo-600" href="#contacts">Контакти</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <div class="hidden sm:flex items-center gap-2 text-sm text-gray-600">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 8l7-5 7 5v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z"/></svg>
+        <span>088 210 4650</span>
+      </div>
+      <button class="bg-indigo-600 text-white text-sm px-3 py-2 rounded-md">Вход / Регистрация</button>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-8">
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+    <div class="md:col-span-2 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white rounded-lg p-8 flex flex-col justify-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Добре дошли в ShopMix</h1>
+      <p class="text-sm md:text-base opacity-90 mb-4">Онлайн магазин с разнообразие от категории — авто, електроника, домакински артикули и още.</p>
+      <div class="flex gap-3">
+        <a href="#products" class="bg-white text-indigo-600 px-4 py-2 rounded-md shadow">Разгледай продукти</a>
+        <a href="#contacts" class="border border-white px-4 py-2 rounded-md">Контакти</a>
+      </div>
+    </div>
+
+    <aside class="bg-white rounded-lg p-4 shadow-sm">
+      <h3 class="font-semibold mb-3">Категории</h3>
+      <ul class="grid grid-cols-2 gap-2 text-sm">
+        <li class="border rounded px-2 py-1 text-center hover:bg-indigo-50 cursor-pointer">Авто</li>
+        <li class="border rounded px-2 py-1 text-center hover:bg-indigo-50 cursor-pointer">Електроника</li>
+        <li class="border rounded px-2 py-1 text-center hover:bg-indigo-50 cursor-pointer">Дом и градина</li>
+        <li class="border rounded px-2 py-1 text-center hover:bg-indigo-50 cursor-pointer">Облекло</li>
+        <li class="border rounded px-2 py-1 text-center hover:bg-indigo-50 cursor-pointer">Инструменти</li>
+        <li class="border rounded px-2 py-1 text-center hover:bg-indigo-50 cursor-pointer">За деца</li>
+        <li class="border rounded px-2 py-1 text-center hover:bg-indigo-50 cursor-pointer">Домашни любимци</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section id="products" class="mb-10">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-xl font-semibold">Популярни Продукти</h2>
+      <div class="text-sm text-gray-500">Количка: 0</div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Products placeholders -->
+    </div>
+  </section>
+
+  <section id="contacts" class="bg-white rounded-lg p-6 shadow-sm">
+    <h3 class="font-semibold mb-3">Контакти</h3>
+    <p class="text-sm mb-2">Телефон: <strong>088 210 4650</strong></p>
+    <p class="text-sm">E-mail: <strong>shopmix-bg.com</strong></p>
+  </section>
+</main>
+
+<footer class="bg-white border-t mt-8">
+  <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-600 flex flex-col md:flex-row justify-between items-center">
+    <div>© 2025 ShopMix — Онлайн магазин</div>
+    <div class="flex gap-3 mt-3 md:mt-0">
+      <a href="#" class="hover:underline">Политика за поверителност</a>
+      <a href="#" class="hover:underline">Доставка</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
